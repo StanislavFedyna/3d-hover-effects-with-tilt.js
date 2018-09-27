@@ -31,6 +31,14 @@ body {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
+.container .card:hover {
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  box-shadow: 0 20px 20px rgba(0,0,0,0.2);
+}
 
 
 .container .card .img-box {
@@ -50,17 +58,84 @@ body {
   opacity: 0.5;
 }
 
-.container .card .img-box img{
+.container .card .img-box img {
   width: 100%;
 
 }
 
-.container .card .content{
+.container .card .content {
   position: absolute;
   width: 100%;
   height: 60%;
-  bottom: 0;
+  bottom: -100%;
   padding: 20px;
+  padding-top: 60px;
   box-sizing: border-box;
   text-align: center;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.container .card:hover .content {
+  bottom: 0;
+
+}
+
+.container .card:nth-child(1) .content {
+  background: linear-gradient(0deg, #093D4E, transparent);
+}
+
+.container .card:nth-child(2) .content {
+  background: linear-gradient(0deg, #3a414c, transparent);
+}
+
+.container .card:nth-child(3) .content {
+  background: linear-gradient(0deg, #0F8EA7, transparent);
+}
+
+.container .card .content h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+}
+
+.container .card .content p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.container .card .content ul {
+  display: flex;
+  margin: 20px 0 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .card .content ul li {
+  list-style: none;
+}
+
+.container .card .content ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 0 10px;
+  font-size: 18px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.container .card .content h2 span {
+  color: #ffeb3e;
+  font-size: 16px;
+
 }
