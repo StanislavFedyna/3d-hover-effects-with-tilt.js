@@ -7,18 +7,20 @@ body {
 
 .container {
   position: relative;
-  width: 1000px;
+  width: 95%;
   margin: 150px auto 0;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 440px;
-  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 20px;
 
 }
 
 .container .card {
   position: relative;
+  width: 300px;
+  height: 440px;
   border-radius: 10px;
   overflow: hidden;
   -webkit-border-radius: 10px;
@@ -90,6 +92,10 @@ body {
 
 .container .card:nth-child(2) .content {
   background: linear-gradient(0deg, #3a414c, transparent);
+}
+
+.container .card:nth-child(3) .content {
+  background: linear-gradient(0deg, #0F8EA7, transparent);
 }
 
 .container .card:nth-child(3) .content {
